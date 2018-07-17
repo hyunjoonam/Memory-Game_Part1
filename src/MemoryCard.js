@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './MemoryCard.css';
 
+// import { withRouter }
+
+
 class MemoryCard extends Component {
     // constructor(){
     //     super();
@@ -13,6 +16,10 @@ class MemoryCard extends Component {
     //     );
     // }
 
+// takeMeToFoo() {
+//         this.propr.history.push('/foo');
+// }
+
     render() {
         let memoryCardInnerClass = "MemoryCardInner";
         if (this.props.isFlipped) {
@@ -20,6 +27,7 @@ class MemoryCard extends Component {
         }
         return (
             <div className="MemoryCard" onClick={this.props.pickCard}>
+            {/*  ex))) <div className="MemoryCard" onClick={this.takeMEToFoo.bind(this)}> */}
                 <div className={memoryCardInnerClass}>
                     <div className="MemoryCardBack">
                         <img src="https://www.digitalcrafts.com/img/DigitalCrafts-Logo-Wrench.png" />
@@ -34,3 +42,5 @@ class MemoryCard extends Component {
 }
 
 export default MemoryCard;
+
+// ex))) export default withRouter(MemoryCard);
