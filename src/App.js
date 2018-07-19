@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Link, Route } from 'react-router-dom';
 import MemoryGame from './MemoryGame.js';
-import Ajax from './Ajax.js';
+import Jobs from './Jobs.js';
 
 
 class App extends Component {
@@ -15,11 +15,11 @@ class App extends Component {
         </header>
         <div className="navbar">
             <Link to="/memory">Memory Game</Link>
-            <Link to="/ajax">Ajax</Link>
+            <Link to="/jobs">Jobs</Link>
         </div>
         <div>
             <Route path="/memory" component={MemoryGame}/>
-            <Route path="/ajax" component={Ajax}/>
+            <Route path="/jobs" component={Jobs}/>
         </div>
       </div>
     );
